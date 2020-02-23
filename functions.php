@@ -723,36 +723,6 @@ function isWechat(){
     return false;
 }
 
-
-//评论自定义字段
-function add_comment_meta_values($comment_id){
-//地址
-if(isset($_POST['hankin_avatar'])){
-$hankin_avatar = wp_filter_nohtml_kses($_POST['hankin_avatar']);
-add_comment_meta($comment_id,'hankin_avatar', $hankin_avatar,false);
-}
-// phone
-if(isset($_POST['hankin_qq'])){
-$hankin_qq = wp_filter_nohtml_kses($_POST['hankin_qq']);
-add_comment_meta($comment_id,'hankin_qq', $hankin_qq,false);
-}
-// comolay
-if(isset($_POST['hankin_username'])){
-$hankin_username = wp_filter_nohtml_kses($_POST['hankin_username']);
-add_comment_meta($comment_id,'hankin_username', $hankin_username,false);
-}
-}//end评论自定义字段
-add_action ('comment_post','add_comment_meta_values',1);
-//添加评论自定义字段标题
-function add_comment_meta_title( $columns )
-{
-return array_merge( $columns, array(
-'hankin_avatar'=>'头像',
-'hankin_qq'=>'qq号',
-'hankin_username'=>'昵称',
-));
-}//end添加评论自定义字段标题
-add_filter('manage_edit-comments_columns','add_comment_meta_title');
 //输出自定义字段值
 function echo_comment_column_value( $column_name, $comment_ID )
 {

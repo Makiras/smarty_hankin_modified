@@ -299,7 +299,7 @@ class AuthorCard extends WP_Widget {
         echo '    </div>';
         echo '    <div class="widget-author-meta text-center pt-4 pl-4 pr-4 pb-2">';
         echo '        <div class="h6 mb-3 text-lg text-c-blue">'.the_author_meta('display_name',1).'</div>';
-        echo '        <div class="desc text-xs mb-3 h-2x ">';
+        echo '        <div class="desc text-xs mb-3 h-2x text-left">';
         echo            $instance['title'];
         echo '        </div>';    
         echo '        <div class="row no-gutters text-center">';

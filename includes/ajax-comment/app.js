@@ -22,7 +22,13 @@ $(document).ready(function() {
 					temp = t.I('wp-temp-form-div'),
 					respond = t.I(t.respondId),
 					post = t.I('comment_post_ID').value,
-					parent = t.I('comment_parent').value;
+					parent = t.I('comment_parent').value,
+					cmauthor = t.I('author').value,
+					cmemail = t.I('email').value,
+					cmurl = t.I('url').value;
+				Cookies.set('comment_author', cmauthor, { expires: 7 });
+				Cookies.set('comment_author_email', cmemail, { expires: 7 });
+				Cookies.set('comment_author_url', cmurl, { expires: 7 });
 				if (parent != '0') {
 					$('#respond').before('<ol class="children">' + data + '</ol>');
 				} else if (!$('.' + __list ).length) {
@@ -47,6 +53,7 @@ $(document).ready(function() {
 					temp.parentNode.insertBefore(respond, temp);
 					temp.parentNode.removeChild(temp)
 				}
+				location.reload();
 			}
 		});
 		return false;
