@@ -16,9 +16,9 @@ $i_theme_blur_layouts = cs_get_option('i_theme_blur_layouts');
 <meta name="description" content="<?= $i_seo_description?>" />
 <?php wp_head(); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?version=<?= time()?>">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css?version=<?= time()?>">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/monokai_sublime.min.css?version=<?= time()?>">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/monokai_sublime.min.css">
 <?php if( ! empty( $i_css ) ){ echo '<style>'.$i_css.'</style>';}else{ echo' ';} ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
 <link rel="icon" href="<?php echo home_url(); ?>/favicon.ico" type="image/x-icon">

@@ -465,11 +465,9 @@ function getThumbnail()
     $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
 
     if(!empty($large_image_url[0]))
-    {
-        return $large_image_url[0]."?version=".time();
-    }
+        return $large_image_url[0];
 
-    return "//qiniu.hankin.cn/img".implode(unique_rand(0, 48, 1), ",").".png?version=".time();
+    return "//makiras.gitee.io/imgs/480_270/img_".(string)rand(1, 108).".jpg";
 }
 /*
 * array unique_rand( int $min, int $max, int $num )
@@ -705,7 +703,7 @@ function json_get_avatar_url( $avatar_html ) {
 加载infinite scroll插件脚本
 */
 function infinitescroll_js() {
-    wp_register_script('infinite_scroll', 'https://cdn.bootcss.com/jquery-infinitescroll/2.0.2/jquery.infinitescroll.min.js', array('jquery'), null, true);
+    wp_register_script('infinite_scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.0.2/jquery.infinitescroll.min.js', array('jquery'), null, true);
     if (!is_singular()) {
         wp_enqueue_script('infinite_scroll');
     }

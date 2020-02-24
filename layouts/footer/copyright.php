@@ -11,8 +11,8 @@ $i_avatar_option_footer = cs_get_option('i_avatar_option_footer'); //备案号
             <?php /* 请尊重博主的劳动成果 你忍心删除我？ */ ?>
             <?php if(!wp_is_mobile()):?>
                 <div class="float-right d-none">
-                    Modified by Makiras From theme <a href="" title="" rel="home"><?php echo _the_theme_name()?> </a>  
-                    Designed by <a href="http://www.hankin.cn" title="hankin" target="_blank">hankin</a>
+                    Modified by <a href="https://gitee.com/makiras/smarty_hankin" title="makiras" target="_blank">Makiras</a> From theme <a href="" title="" rel="home"><?php echo _the_theme_name()?> </a>  
+                    Designed by <a href="https://www.hankin.cn" title="hankin" target="_blank">hankin</a>
                 </div>
             <?php endif;?>
 		</div>

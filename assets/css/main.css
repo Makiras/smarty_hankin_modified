@@ -1,4 +1,4 @@
-@import url(//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -370,6 +370,11 @@ post content
 .widget_recent_entries ul li a{display:block;font-size:.875rem}
 .widget_recent_entries ul li span{color:#8a92a9;font-size:.75rem}
 
+/*--------------------------------------------------------------
+  widget_recentcomments style
+--------------------------------------------------------------*/
+.recentcomments a {text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.widget_recent_comments li {white-space: nowrap;}
 
 /*--------------------------------------------------------------
   widget_categories style

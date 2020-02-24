@@ -36,7 +36,7 @@ window.IS_SLIDER = <?= ($i_slider) ? '1' : '0' ?>;
 <?php if(!wp_is_mobile() && $i_theme_switch):?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/menu-setting.min.js"></script>
 <?php endif;?>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/pjax.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins/pjax.js"></script>
 <script type="text/javascript" src="//res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script type="text/javascript">
 wxConfig = {
@@ -79,7 +79,6 @@ wxConfig = {
     console.log("%csmarty_hankin%c<?php echo 'v'._the_theme_version();?>", key_style, value_style);
     console.log("%c生成时页面耗时%c<?php echo timer_stop(0,10);?>", key_style, value_style);
     console.log("%c生成时SQL 请求数%c<?php echo get_num_queries();?>", key_style, value_style);
-    console.log("%c主题作者博客%chttps://www.hankin.cn", key_style, value_style);
 </script>
 <!--网站统计代码 start-->
 <?php if( ! empty( $i_js_tongji ) ){ echo '<script type="text/javascript">'.$i_js_tongji.'</script>';}else{ echo'';} ?>
