@@ -32,20 +32,15 @@ function hljsLoad() {
 	$('#view-content').viewer();
 	$('.gallery').viewer();
 
-	hljs.initHighlightingOnLoad();
-	$('pre code').each(function (j, block) {
-		hljs.highlightBlock(block);
-		var lines = $(this).text().split('\n').length - 1;
-		if (lines < 4) return;  // 当行数小于4时不显示行号
-		var $numbering = $('<ol/>').addClass('pre-numbering');
-		$(this)
-			.addClass('has-numbering')
-			.parent()
-			.append($numbering);
-		for (i = 1; i <= lines; i++) {
-			$numbering.append($('<li/>').text(i));
-		}
-	});
+
+	$(".katex.math.inline").each(function () { var parent = $(this).parent()[0]; if (parent.localName !== "code") { var texTxt = $(this).text(); var el = $(this).get(0); try { katex.render(texTxt, el) } catch (err) { $(this).html("<span class=\'err\'>" + err) } } else { $(this).parent().text($(this).parent().text()) } });
+	$(".katex.math.multi-line").each(function () { var texTxt = $(this).text(); var el = $(this).get(0); try { katex.render(texTxt, el, { displayMode: true }) } catch (err) { $(this).html("<span class=\'err\'>" + err) } });
+	$(".mind p").remove(); $(".mind .mindTxt script").remove(); var mind = $(".mind"); if (mind.drawMind !== undefined) { mind.drawMind() }
+	$(".mermaid script").remove();
+	if (typeof mermaid == "undefined"){
+		var mermaid={};
+	}else{mermaid.initialize({ "theme": "dark", "logLevel": 5, "arrowMarkerAbsolute": false, "startOnLoad": true, "flowchart": { "htmlLabels": true, "curve": "linear" }, "sequence": { "diagramMarginX": 50, "diagramMarginY": 10, "actorMargin": 50, "width": 150, "height": 65, "boxMargin": 10, "boxTextMargin": 5, "noteMargin": 10, "messageMargin": 35, "mirrorActors": true, "bottomMarginAdj": 1, "useMaxWidth": true }, "gantt": { "titleTopMargin": 25, "barHeight": 20, "barGap": 4, "topPadding": 50, "leftPadding": 75, "gridLineStartPadding": 35, "fontSize": 11, "fontFamily": "\"Open-Sans\", \"sans-serif\"", "numberSectionStyles": 4, "axisFormat": "%Y-%m-%d" }, "class": {}, "git": {} }, '.mermaid');	}
+	EnlighterJS.Util.Helper(document.getElementsByClassName("EnlighterJSRAW"),EnlighterJS_Config);
 	//弹出垂直菜单
 	$(".menu").click(function () {
 		if ($(this).hasClass("cura")) {
