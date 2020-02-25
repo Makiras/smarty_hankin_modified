@@ -17,16 +17,16 @@ Modified under Apache License 2.0
 
 ## What have I done or planning to do
 
-[x] Remove old Editor.md, use the origin wp plugin. Modified the PJAX for `Katex`,`Mind`,`meraid` complicated.  
-[x] Reconstruct comment system, use gravatar and email addr. NOT FUCKING TENCENT QQ.  
-[x] Add cdn(`jsdelivr`) for some of the js/css.  
-[x] Rebuild highlighter, using Enlighter plugin for highligter. Please notice that this function also need to modify `Editor.md` plugin. The code which is using to handle codeblocks and Katex inline should be replce.  
-[x] Fix white background for info card when transparent is enabled.  
-[x] Fix Widget_recent_comments (NOT THE THEME'S WIDGET) word overflow and changing line bug.  
-[x] Replace article default random images url to gitee.io (improve access speed).  
-[] Fix PJAX for WP-ADMIN on top-tool-bar.
-[] Refact notice board, change to use `https://hitokoto.cn/` API
-[] Fix Android Edge, Firefox blur ,`backdrop-filte`.  
+- [x] Remove old Editor.md, use the origin wp plugin. Modified the PJAX for `Katex`,`Mind`,`meraid` complicated.  
+- [x] Reconstruct comment system, use gravatar and email addr. NOT FUCKING TENCENT QQ.  
+- [x] Add cdn(`jsdelivr`) for some of the js/css.  
+- [x] Rebuild highlighter, using Enlighter plugin for highligter. Please notice that this function also need to modify `Editor.md` plugin. The code which is using to handle codeblocks and Katex inline should be replce.  
+- [x] Fix white background for info card when transparent is enabled.  
+- [x] Fix Widget_recent_comments (NOT THE THEME'S WIDGET) word overflow and changing line bug.  
+- [x] Replace article default random images url to gitee.io (improve access speed).  
+- [ ] Fix PJAX for WP-ADMIN on top-tool-bar.
+- [ ] Refact notice board, change to use `https://hitokoto.cn/` API
+- [ ] Fix Android Edge, Firefox blur ,`backdrop-filte`.  
 
 ## What's more
 
