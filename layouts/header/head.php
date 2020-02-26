@@ -34,7 +34,7 @@ $i_theme_blur_layouts = cs_get_option('i_theme_blur_layouts');
 <body class="<?= isset($_COOKIE['background']) ? $_COOKIE['background'] : 'background-blue'?>">
 	<div class="<?= isset($_COOKIE['box-layout']) ? $_COOKIE['box-layout'] : 'container box-layout' ?>" id="body">
 <?php else:?>
-<body class="background-blue" style="background:url(<?= $i_theme_background;?>) no-repeat fixed center;background-size:cover;">
+<body class="background-blue" style="--background:url(<?= $i_theme_background;?>) no-repeat fixed center;background:var(--background);background-size:cover;">
 	<div class="<?= ($i_theme_box_center) ? 'container box-layout' : '' ?>" id="body">
 <?php endif;?>
 <!-- [ Pre-loader ] start -->

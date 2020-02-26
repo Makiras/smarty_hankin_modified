@@ -136,7 +136,7 @@ table.DTFC_Cloned tr{background-color:#292929}
 .nav-tabs .nav-link,.tab-content{box-shadow:0 1px 20px 0 rgba(0,0,0,0.08)}
 .form-control-plaintext{color:#adb7be}
 .input-group-text{border-color:#030408;color:#adb7be}
-.custom-file-label,.custom-select,.form-control{background:##0a112059;color:#adb7be;border-color:#030408}
+.custom-file-label,.custom-select,.form-control{background:#0a112059;color:#adb7be;border-color:#030408}
 .custom-file-label:focus,.custom-select:focus,.form-control:focus{background:#090f1c;color:#adb7be;border-color:#090f1c}
 .switch input[type=checkbox] + .cr{border:1px solid #adb7be}
 .custom-file-label::after{background-color:#030408;color:#adb7be;border-left:1px solid #0a1120}
@@ -307,3 +307,6 @@ div.DTS div.dataTables_scrollBody table{background-color:#060b14}
 .Author_Card{background:#ffffff0d!important;}
 .pcoded-navbar.menu-light a{color:#fff}
 .pcoded-navbar.menu-light .pcoded-inner-navbar li.pcoded-hasmenu .pcoded-submenu li+li>a{border:0!important}
+@supports not (backdrop-filter: blur(10px)){
+    .mobile-overlay::after,.pcoded-header.headerpos-fixed::after,.toast::after,#content::after,.pcoded-navbar.menu-light::after{background: rgba(0,0,0,0)}
+}

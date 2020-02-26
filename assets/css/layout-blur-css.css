@@ -20,3 +20,8 @@ h1, h2, h3, h4, h5, h6,a{color:var(--white)!important}
 .mb-2{color:#37474f!important}
 .grid_author_avt:after{background-image:none;}
 .list-body a{color:var(--white)!important}
+@supports not (backdrop-filter: blur(10px)){
+    .mobile-overlay::after,.pcoded-header.headerpos-fixed::after,.toast::after,.pcoded-main-container::after,.pcoded-navbar.menu-light::after{background:var(--background);background-size:cover;content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-attachment:fixed;}
+    .mobile-overlay::after,.pcoded-header.headerpos-fixed::after{filter:blur(5px);}
+    .toast::after,.pcoded-main-container::after,.pcoded-navbar.menu-light::after{filter:blur(10px);}
+}

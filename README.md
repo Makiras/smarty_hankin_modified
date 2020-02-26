@@ -24,9 +24,10 @@ Modified under Apache License 2.0
 - [x] Fix white background for info card when transparent is enabled.  
 - [x] Fix Widget_recent_comments (NOT THE THEME'S WIDGET) word overflow and changing line bug.  
 - [x] Replace article default random images url to gitee.io (improve access speed).  
+- [x] Fix Android Edge, Firefox blur ,`backdrop-filte`.  **Due to browser limitation and changing cost, almost fix.**
 - [ ] Fix PJAX for WP-ADMIN on top-tool-bar.
 - [ ] Refact notice board, change to use `https://hitokoto.cn/` API
-- [ ] Fix Android Edge, Firefox blur ,`backdrop-filte`.  
+
 
 ## What's more
 
