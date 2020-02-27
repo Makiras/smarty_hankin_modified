@@ -282,7 +282,7 @@ class AuthorCard extends WP_Widget {
             echo '</div>';    
         else:
             echo '        <div class="media media-2x1">';
-            echo '            <div class="media-content" style="background-image:url('."//cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin".'/assets/images/default-cover.jpg)"></div>';
+            echo '            <div class="media-content" style="background-image:url('."//cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin".'/assets/images/default-cover.jpg)"></div>';
             echo '        </div>';
         endif;
 ###################################  
@@ -293,7 +293,7 @@ class AuthorCard extends WP_Widget {
         if(!empty($instance['advertising'])):
             echo '                <img src="' . $instance['advertising'] . '" /></div>';
         else:
-            echo '                <img src="'."//cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin".'/assets/images/default.jpg"/></div>';
+            echo '                <img src="'."//cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin".'/assets/images/default.jpg"/></div>';
         endif;
         echo '        </div>';
         echo '    </div>';

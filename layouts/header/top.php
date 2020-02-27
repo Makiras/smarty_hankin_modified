@@ -8,7 +8,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
         <a href="<?= home_url()?>" class="b-brand">
             <!-- ========   change your logo hear   ============ -->
             <?php if(empty($i_avatar_logo)):?>
-            <img src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/logo2.png" alt="" class="logo">
+            <img src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/logo2.png" alt="" class="logo">
             <?php else:?>
             <img src="<?php echo $i_avatar_logo?>" alt="" class="logo" width="68" height="auto">
             <?php endif;?>
@@ -66,7 +66,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
                             </li>
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
                                         <p>New ticket Added</p>
@@ -78,7 +78,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
                             </li>
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
                                         <p>Prchace New Theme and make payment</p>
@@ -87,7 +87,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
                             </li>
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
                                         <p>currently login</p>
@@ -96,7 +96,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
                             </li>
                             <li class="notification">
                                 <div class="media">
-                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+                                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
                                     <div class="media-body">
                                         <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
                                         <p>Prchace New Theme and make payment</p>
@@ -117,7 +117,7 @@ $i_avatar_logo = cs_get_option('i_avatar_logo'); //自定义友情链接
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
-                            <img src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+                            <img src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static/smarty_hankin"; ?>/assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
                             <span>John Doe</span>
                             <a href="auth-signin.html" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
