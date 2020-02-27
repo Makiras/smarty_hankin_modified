@@ -34,9 +34,9 @@ window.IS_SLIDER = <?= ($i_slider) ? '1' : '0' ?>;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
 <?php if(!wp_is_mobile() && $i_theme_switch):?>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/menu-setting.min.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/menu-setting.min.js"></script>
 <?php endif;?>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins/pjax.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/plugins/pjax.js"></script>
 <script type="text/javascript" src="//res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script type="text/javascript">
 wxConfig = {
@@ -46,17 +46,17 @@ wxConfig = {
 	imgUrl : window.ENCODE_URI_COMPONENT_IMAGE,
 };
 </script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/wxShare.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/wxShare.js"></script>
 <!-- viewer start-->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/viewer/viewer.min.css">
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/viewer/viewer.min.js"></script>
+<link rel="stylesheet" href="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/viewer/viewer.min.css">
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/viewer/viewer.min.js"></script>
 <!-- viewer start-->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/message.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/main.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/message.js"></script>
 <?php if( ! empty( $i_js ) ){ echo '<script type="text/javascript">'.$i_js.'</script>';}else{ echo'';} ?>
 <!-- 分享插件 start-->
 <div id="cz-leftside-share"></div>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/plugins/jquery.share.min.js"></script>
+<script type="text/javascript" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/js/plugins/jquery.share.min.js"></script>
 <!-- 分享插件 end-->
 <?php if(!wp_is_mobile() && $i_music_check):?>
 <script type="text/javascript">
@@ -68,7 +68,7 @@ wxConfig = {
 </script>
 <!-- 音乐播放器 start-->
 <div class="aplayer-footer"><div class="ap-f" id="ap-f"></div></div>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/player/css/play.css">
+<link rel="stylesheet" type="text/css" href="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/player/css/play.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <!-- 音乐播放器 start-->
 <?php endif;?>

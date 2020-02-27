@@ -64,10 +64,10 @@ function wp_login_style() {
     $authorCard = new AuthorCard();
         $widget_cs_widget_author = reset(get_option('widget_cs_widget_author'));
         $advertising = $widget_cs_widget_author['advertising'];
-    wp_enqueue_style( "wp-login", get_template_directory_uri() . "/assets/css/admin/wp-login.css?v=".time() );
+    wp_enqueue_style( "wp-login", "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin" . "/assets/css/admin/wp-login.css?v=".time() );
     echo '<style>
         .login {
-            background-image: url("'.get_template_directory_uri().'/assets/images/nav-bg/body-bg-'.rand(1,12).'.png");
+            background-image: url("'."https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin".'/assets/images/nav-bg/body-bg-'.rand(1,12).'.png");
         }
         #login h1 a {
             background: #ccc url("'.$advertising.'");
@@ -78,7 +78,7 @@ add_action('login_enqueue_scripts', 'wp_login_style');
 if($i_admin_dark_mode):
 /* 设置后台样式*/
 function admin_mycss() {    
-    wp_enqueue_style( "admin-my", get_template_directory_uri() . "/assets/css/admin/wp-admin.css");
+    wp_enqueue_style( "admin-my", "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin" . "/assets/css/admin/wp-admin.css");
 }
 add_action('admin_head', 'admin_mycss');
 endif;
@@ -728,7 +728,7 @@ function echo_comment_column_value( $column_name, $comment_ID )
         case "hankin_avatar" :
 
             $qq_url = get_comment_meta( $comment_ID, $column_name ,true);
-            $qq_url = ($qq_url=='') ? get_template_directory_uri().'/assets/images/user/default-avatar.png' : $qq_url;
+            $qq_url = ($qq_url=='') ? "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin".'/assets/images/user/default-avatar.png' : $qq_url;
             echo '<img width="50" height="50" src='.$qq_url.'>';
             break;
             default :

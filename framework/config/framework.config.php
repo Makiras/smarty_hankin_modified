@@ -59,7 +59,7 @@ $options[] = [
         'id' => 'i_avatar_logo',
         'type' => 'upload',
         'title' => 'logo设置',
-        'default' => get_template_directory_uri() ."/assets/images/logo2.png",
+        'default' => "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin" ."/assets/images/logo2.png",
       ],
 
       // icon
@@ -67,7 +67,7 @@ $options[] = [
         'id' => 'i_avatar_icon',
         'type' => 'upload',
         'title' => 'icon设置',
-        'default' => get_template_directory_uri() ."/assets/images/logo2.png",
+        'default' => "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin" ."/assets/images/logo2.png",
       ],
 
       // 网站备案号

@@ -16,9 +16,9 @@ $i_theme_blur_layouts = cs_get_option('i_theme_blur_layouts');
 <meta name="description" content="<?= $i_seo_description?>" />
 <?php wp_head(); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/monokai_sublime.min.css">
+<link rel="stylesheet" href="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/css/style.css">
+<link rel="stylesheet" href="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/css/main.css">
+<link rel="stylesheet" href="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/css/monokai_sublime.min.css">
 <?php if( ! empty( $i_css ) ){ echo '<style>'.$i_css.'</style>';}else{ echo' ';} ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' );?>
 <link rel="icon" href="<?php echo home_url(); ?>/favicon.ico" type="image/x-icon">
@@ -26,7 +26,7 @@ $i_theme_blur_layouts = cs_get_option('i_theme_blur_layouts');
 <?php if($i_theme_switch):?>
 <link rel="stylesheet" class="layout-blur-css" id="layout-blur-css" href="<?= isset($_COOKIE['layout-blur-css']) ? $_COOKIE['layout-blur-css'] : ''?>">
 <?php else:?>
-	<link rel="stylesheet" class="layout-blur-css" id="layout-blur-css" href="<?= isset($i_theme_blur_layouts) ? get_template_directory_uri().'/assets/css/layout-blur-css.css' : ''?>">
+	<link rel="stylesheet" class="layout-blur-css" id="layout-blur-css" href="<?= isset($i_theme_blur_layouts) ? "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin".'/assets/css/layout-blur-css.css' : ''?>">
 <?php endif;?>
 <link rel="stylesheet" class="rtl-css" id="rtl-css" href="">
 </head>

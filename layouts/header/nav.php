@@ -8,7 +8,7 @@ $i_links = cs_get_option('i_links'); //自定义友情链接
 
             <div class="" style="display: none">
                 <div class="main-menu-header">
-                    <img class="img-radius" src="<?php echo get_template_directory_uri(); ?>/assets/images/user/avatar.png" alt="User-Profile-Image">
+                    <img class="img-radius" src="<?php echo "https://cdn.jsdelivr.net/gh/Makiras/Makiras-Static@master/smarty_hankin"; ?>/assets/images/user/avatar.png" alt="User-Profile-Image">
                     <div class="user-details">
                         <div id="more-details">hankin  <i class="fa fa-caret-down"></i></div>
                     </div>
